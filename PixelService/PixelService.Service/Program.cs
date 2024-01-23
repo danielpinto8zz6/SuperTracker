@@ -20,7 +20,7 @@ app.MapGet("/track", async (HttpRequest request, [FromServices] ITrackService tr
         
         await trackService.SendAsync(new TrackEvent { IpAddress = ipAddress, Referrer = referrer, UserAgent = userAgent });
 
-        return Results.File("logo.jpeg", contentType: "image/jpeg");
+        return Results.File("track.gif", contentType: "image/gif");
     })
     .WithName("GetTrack");
 
