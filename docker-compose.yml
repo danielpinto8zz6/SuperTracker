@@ -45,6 +45,7 @@ services:
       - pixel-service
 
   storage-service:
+    container_name: storage-service
     build:
       context: .
       dockerfile: StorageService.Dockerfile
@@ -56,6 +57,7 @@ services:
       - pixel-service
 
   pixel-service:
+    container_name: pixel-service
     build:
       context: .
       dockerfile: PixelService.Dockerfile
