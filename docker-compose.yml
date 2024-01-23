@@ -1,5 +1,5 @@
----
-version: '2'
+version: "3.8"
+
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.3.0
@@ -10,6 +10,8 @@ services:
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - pixel-service
 
   broker:
     image: confluentinc/cp-server:7.3.0
@@ -39,3 +41,33 @@ services:
       CONFLUENT_METRICS_REPORTER_TOPIC_REPLICAS: 1
       CONFLUENT_METRICS_ENABLE: 'true'
       CONFLUENT_SUPPORT_CUSTOMER_ID: 'anonymous'
+    networks:
+      - pixel-service
+
+  storage-service:
+    build:
+      context: .
+      dockerfile: StorageService.Dockerfile
+    environment:
+      Kafka__BootstrapServers: 'broker:29092'
+    depends_on:
+      - broker
+    networks:
+      - pixel-service
+
+  pixel-service:
+    build:
+      context: .
+      dockerfile: PixelService.Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      Kafka__BootstrapServers: 'broker:29092'
+    depends_on:
+      - broker
+    networks:
+      - pixel-service
+
+networks:
+  pixel-service:
+    driver: bridge

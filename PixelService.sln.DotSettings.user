@@ -1,0 +1,18 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2c293277_002Dabf3_002D4544_002D9972_002Df921ae09227a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="KafkaProducerServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2dac148d_002D38a9_002D459f_002D9dc3_002Df50d9924e163/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="StorageServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;D4786335-FE5A-4B3E-BD74-66FFF9331B15::net8.0::NUnit3x::StorageService.Application.Tests.StorageConsumerServiceTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cf251396_002D1411_002D41da_002D836c_002Dc2bbe90164ec/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="StorageConsumerServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;D4786335-FE5A-4B3E-BD74-66FFF9331B15::net8.0::NUnit3x::StorageService.Application.Tests.StorageConsumerServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;D4786335-FE5A-4B3E-BD74-66FFF9331B15::net8.0::NUnit3x::StorageService.Application.Tests.StorageServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;C7F7F34F-B7D5-4DDC-8B4B-8209B61A372D::net8.0::NUnit3x::StorageService.Infrastructure.UnitTests.StorageRepositoryTests.ShouldSaveTrackEventToFileAsync&lt;/TestId&gt;
+    &lt;TestId&gt;C7F7F34F-B7D5-4DDC-8B4B-8209B61A372D::net8.0::NUnit3x::StorageService.Infrastructure.UnitTests.StorageRepositoryTests&lt;/TestId&gt;
+    &lt;TestId&gt;2462D565-2FE7-4F5F-B8E6-0B2ABBDC3C9E::net8.0::NUnit3x::PixelService.Application.UnitTests.KafkaProducerServiceTests.ShouldProduceTrackEventToKafkaAsync&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
